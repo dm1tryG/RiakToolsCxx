@@ -60,7 +60,6 @@ int main(int argc, char* argv[]) {
             } else {
                 std::stringstream msg;
                 msg << "Unable to open " << dir_itr->path() << ", error: " << status.ToString();
-                throw std::runtime_error(msg.str());
             }
         }
     }
